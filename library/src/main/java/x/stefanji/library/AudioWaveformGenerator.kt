@@ -7,6 +7,7 @@ import android.media.MediaFormat
 import android.os.Build
 import android.os.Handler
 import android.os.HandlerThread
+import android.util.Log
 import java.nio.ByteBuffer
 import java.util.concurrent.CountDownLatch
 import kotlin.math.pow
@@ -160,6 +161,7 @@ class AudioWaveformGenerator(
         if (sampleCount == perSamplePoints) {
             val rms = sqrt(sampleSum / perSamplePoints) * 2 // 0~1
             sampleData.add(rms.toFloat())
+            Log.d("6563rv rms.toFloat() ", "" + rms.toFloat())
             sampleCount = 0
             sampleSum = 0.0
         }

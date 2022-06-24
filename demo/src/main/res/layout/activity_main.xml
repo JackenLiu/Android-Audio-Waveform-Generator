@@ -14,6 +14,11 @@
             android:layout_height="match_parent" />
     </HorizontalScrollView>
 
+    <x.stefanji.audiovisulizer.view.TrackVolumeWave
+        android:id="@+id/tvw"
+        android:layout_width="match_parent"
+        android:layout_height="112px" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnStart"
         android:layout_width="wrap_content"
